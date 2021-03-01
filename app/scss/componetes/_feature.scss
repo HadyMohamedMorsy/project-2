@@ -1,0 +1,54 @@
+
+.parent-feature{
+    background-color: $Light;
+    .feature{
+
+        &__intro{
+            margin-bottom: 3.75rem;
+            @include breakepoint-up(lg){
+                width: 55%;
+            }
+        }
+        @include breakepoint-down(mid) {
+            text-align: center;
+        }
+        &__grid{
+            @include breakepoint-up(mid){
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        &-item{
+            padding: 0.9375rem;
+    
+            @include breakepoint-up(mid){
+                flex:0 0 50%;
+            }
+    
+            @include breakepoint-up(lg){
+                flex: 1;
+            }
+        }
+        &-icon{
+            margin-bottom: 1.875rem;
+            @include breakepoint-up(lg){
+                margin-bottom : 2.75rem;
+            }
+        }
+        &-title{
+            font-size: 1.25rem;
+            font-weight: 300;
+            line-height: 1.15;
+            color: $DarkBlue;
+            margin-bottom : 1rem;
+            @include breakepoint-up(lg){
+               font-size :1.5rem;
+               margin-bottom : 1.5rem;
+            }
+        }
+        &-description{
+            font-size: 0.857rem;
+            line-height: 1.5rem;
+        }
+    }
+}

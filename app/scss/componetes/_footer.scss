@@ -1,0 +1,78 @@
+.footer{
+    background-color: #090707;
+
+    .container--pall{
+        padding-top: 3.125rem;
+        padding-bottom: 3.125rem;
+    }
+
+    .footer-row{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+
+        @include breakepoint-up(mid){
+            flex-wrap: nowrap;
+        }
+    }
+
+    &-item{
+        margin-bottom: 1.25rem;
+        @include flexbox(12);
+        @include breakepoint-up(mid){
+            @include flexbox(3);
+
+            
+        }
+        .header-logo{
+            @include breakepoint-up(mid){
+                margin-bottom: 4.375rem;
+                display: block;
+                
+    
+                
+            }
+        }
+
+    }
+
+    .Two{
+        @include flexbox(12);
+        @include breakepoint-up(mid){
+            @include flexbox(2);
+        }
+        a{
+            display: block;
+            @include breakepoint-up(mid){
+                display: block;
+                margin-bottom: 1.5625rem;
+            }
+
+        }
+
+    }
+
+    .six{
+        @include flexbox(12);
+        @include breakepoint-up(mid){
+            @include flexbox(6);
+            text-align: center;
+        }
+
+        .button {
+            margin-bottom: 0.9375rem;
+            @include breakepoint-up(mid){
+                margin-bottom: 3.25rem;
+            }
+
+        }
+
+    }
+}
+
+// @mixin breakepoint-up($size) { // for display block desktop
+//     @media(min-width: map-get($breakepoint-up , $size)){
+//         @content;
+//     }
+// }

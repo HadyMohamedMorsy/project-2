@@ -1,0 +1,85 @@
+.hero {
+  background-color: #fafafa; }
+  @media (min-width: 64em) {
+    .hero .container {
+      display: flex;
+      align-items: center; } }
+  .hero-image {
+    position: relative;
+    background: url("../../images/bg-intro-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 17.5rem; }
+    @media (min-width: 40em) {
+      .hero-image {
+        min-height: 25rem;
+        background-position: 60% center; } }
+    @media (min-width: 64em) {
+      .hero-image {
+        flex: 3;
+        order: 2;
+        height: 41rem;
+        background-image: none; } }
+    @media (min-width: 64em) {
+      .hero-image .heoro-before {
+        background-size: 122%;
+        position: absolute;
+        background: url("../../images/bg-intro-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        height: 100%; } }
+  @media (min-width: 64em) and (min-width: 40em) {
+    .hero-image .heoro-before {
+      background-size: 102%;
+      position: absolute;
+      background: url(../../images/bg-intro-desktop.svg);
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      height: 100%;
+      max-width: 140%; } }
+  @media (min-width: 64em) and (min-width: 64em) {
+    .hero-image .heoro-before {
+      max-width: 180%; } }
+
+    .hero-image .heoro-after {
+      position: absolute;
+      background: url("../../images/image-mockups.png");
+      background-size: 70%;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      width: 100%;
+      height: 100%; }
+      @media (min-width: 40em) {
+        .hero-image .heoro-after {
+          background-size: 52%; } }
+      @media (min-width: 64em) {
+        .hero-image .heoro-after {
+          width: 120%;
+          height: 122%;
+          background-size: 94%;
+          background-position: center 150%;
+          left: 24%; } }
+      @media (min-width: 40em) {
+        .hero-image .heoro-after {
+          width: 83%;
+          height: 90%;
+          background-size: 94%;
+          background-position: center 150%;
+          left: 15%; } }
+      @media (max-width: 63.9375em) {
+        .hero-image .heoro-after {
+          width: 47%; } }
+  .hero-text {
+    text-align: center; }
+    @media (min-width: 64em) {
+      .hero-text {
+        flex: 2;
+        order: 1;
+        text-align: left; } }
+    .hero-text p {
+      line-height: 1.5;
+      margin-bottom: 2.25rem;
+      font-size: 0.9375rem; }
+
+/*# sourceMappingURL=hero.css.map */

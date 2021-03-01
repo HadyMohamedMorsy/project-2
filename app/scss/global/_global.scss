@@ -1,0 +1,141 @@
+@import'../helper/mixenes';
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    color: $Grayish;
+    font-size: $font-sm;
+    overflow-x: hidden;
+
+    @include breakepoint-up(lg){
+    font-size:$font-md ;
+    }
+
+    font-weight: 300;
+    font-family: 'Public Sans', sans-serif;
+    line-height: 1.3;
+}
+a, a:visited, a:hover{
+    text-decoration: none;
+    color: $Grayish;
+}
+.container{
+
+
+    max-width: 69.375rem;
+    margin: 0 auto;
+    &--pall{
+
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
+        padding-right:1.5rem;
+        padding-left:1.5rem;
+        
+        @include breakepoint-up(lg){
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+    }
+    &--px{
+        padding-right:1.5rem;
+        padding-left:1.5rem;
+    }
+    &--py{
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
+
+        @include breakepoint-up(lg){
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+    }
+    &--pt{
+        padding-top: 4.375rem;
+        @include breakepoint-up(lg){
+            padding-top: 6rem;
+        }
+    }
+    &--pr{
+        padding-right:1.5rem;
+    }
+    &--pb{
+
+        padding-bottom: 4.375rem;
+        @include breakepoint-up(lg){
+            padding-bottom: 6rem;
+        }
+    }
+    &--pl{
+        padding-left:1.5rem;
+    }
+
+}
+h1,h2,h3{
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.15;
+    color: $DarkBlue;
+}
+h1{
+
+    margin-bottom: 1.5rem;
+    @include breakepoint-up(lg){
+        font-size: $font-xl;
+    }
+}
+
+h2{
+    font-size: 1.875rem;
+    margin-bottom: 1.5625rem;
+
+    @include breakepoint-up(lg){
+        font-size: 2.25rem;
+        margin-bottom: 2.25rem;
+    }
+}
+.flex{
+    display: flex;
+
+    &-jc-sb{
+        justify-content: space-between;
+    }
+    &-jc-c{
+        justify-content: center;
+    }
+    &-ai-c{
+        align-items: center;
+    }
+}
+button,.button{
+    display: inline-block;
+    padding: 0.875rem 2.1875rem;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    font-weight: 400;
+    background: linear-gradient(to right, $Lime, $Bright);
+    font-size: $font-sm;
+    color:$White !important;
+    transition: opacity 300ms ease-in-out;
+
+    &:hover{
+        opacity: 0.75;
+    }
+}
+
+.hide-for-mobile{
+   @include breakepoint-down(mid){
+       display: none;
+   }
+}
+.hide-for-desktop{
+    @include breakepoint-up(lg){
+        display: none;
+    }
+}
